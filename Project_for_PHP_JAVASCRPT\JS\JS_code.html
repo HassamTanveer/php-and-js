@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<script>
+var desire_array=[];
+var allInOne[["Company A","property insurance","apartment or house"],["Company B","5 door car or 4 door car","driver's license also car insurance"],["Company C","social security num","work permit"],["Company D", "apartment or a flat or a house", " "], ["Company E", "driver's license and a 2 door car or a 3 door car or a 4 door car or a 5 door car", " "], ["Company F","scooter or a bike, or a motorcycle and a driver's license also motorcycle insurance", ""],["Company G", "requires a massage qualification certificate also a liability insurance", " "],["Company H", "requires a storage place or a garage", ""],["Company I", "doesn't require anything","you can come and start working immediately"],
+            ["Company J", "requires a PayPal account", " "],
+            ["Company K", "bike","driving license"],
+            ["Company L", "social security num","paypal"],
+           	["Company M", "car insurance","work permit",
+           	["Company N", "health insurance", "age limit 23"],
+           	["Company O", "local citizen","4 door car"],
+           	["Company P","live in LA", "have his own house"],
+           	["Company Q", "4 door car", "5 door car"],
+           	["Company R", "a bike", ""],
+           	["Company S", "", "a driving license"],
+           	["Company T", "", "a bike"],
+           	["Company U", "driving license", ""],
+           	["Company V","social security num","2 year experience"],
+           	["Company W", "a car","2 year experience"],
+           	["Company X", "2 door car ", "2 year experience"],
+           	["Company Y", "4 door car", "2 year experience"],
+           	["Company Z", "5 door car", "2 year experience"],
+           	["Company L", "2 door car", ""],
+           	["Company L", "", "4 door car"],];
+
+
+
+
+for (counter = 0; counter < 1000; counter++) { 
+	var Company_name=allInOne[counter][0];
+	var str =(allInOne[counter][1]);
+    var n = str.indexOf("or a bike");
+    
+    var str1 =(allInOne[counter][2]);
+    var n1 = str1.indexOf("or a bike");
+
+    var str2 =(allInOne[counter][1]);
+    var n2 = str2.indexOf("or a driving license");
+
+    var str3 =(allInOne[counter][2]);
+    var n3 = str3.indexOf("or a driving license");
+
+    var str4 =(allInOne[counter][1]);
+    var n4 = str4.indexOf("a bike and driving license");
+
+    var str5 =(allInOne[counter][2]);
+    var n5 = str5.indexOf("a bike and driving license");
+    
+    if(allInOne[counter][1]=="a bike" && allInOne[counter][2]== "a driving license")
+    {
+    	desire_array[counter]=Company_name;
+
+    }
+    else if(allInOne[counter][1]=="doesn't require anything" || allInOne[counter][2]== "doesn't require anything")
+    {
+    	desire_array[counter]=Company_name;
+
+    }
+    else if(n>= 0 Or n1 >= 0 Or n2 >= 0 Or n3 >=0
+    	   Or n4 >= 0 Or n5 >= 0 )
+    {
+    	desire_array[counter]=Company_name;
+    }
+
+    
+} 
+for (counterthree = 0; counterthree < 100; counterthree++) 
+{
+	 
+   document.getElementById("demo").innerHTML = desire_array[counterthree];
+
+}
+
+document.getElementById("demo").innerHTML = desire_array[];
+</script>
+
+</body>
+</html>
+
